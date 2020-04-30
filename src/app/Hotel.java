@@ -10,6 +10,15 @@ public class Hotel extends Comercial{
 		super(direccion, cantidadMetrosCuadrado, costoMetrosCuadrado, tiempoEstimado, empleados, nombre);
 		setCantidadDePiso(cantidadDePiso);
 	}
+	
+	
+
+	@Override
+	public String toString() {
+		return "Hotel [cantidadDePiso=" + cantidadDePiso + ", nombre=" + nombre + ", direccion=" + direccion + ", cantidadMetrosCuadrado=" + cantidadMetrosCuadrado + ", costoMetrosCuadrado=" + costoMetrosCuadrado + ", tiempoEstimado=" + tiempoEstimado + ", empleados=" + empleados + "]";
+	}
+
+
 
 	public int getCantidadDePiso() {
 		return cantidadDePiso;

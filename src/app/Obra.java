@@ -3,9 +3,9 @@ package app;
 import java.util.ArrayList;
 
 public abstract class Obra {
-	private String direccion;
-	private int cantidadMetrosCuadrado,costoMetrosCuadrado,tiempoEstimado;
-	private ArrayList <Empleado> empleados;
+	protected String direccion;
+	protected int cantidadMetrosCuadrado,costoMetrosCuadrado,tiempoEstimado;
+	protected ArrayList <Empleado> empleados;
 	
 	public Obra(String direccion, int cantidadMetrosCuadrado, int costoMetrosCuadrado, int tiempoEstimado, ArrayList<Empleado> empleados) {
 		setDireccion(direccion);
@@ -15,6 +15,15 @@ public abstract class Obra {
 		this.empleados= new ArrayList<>();
 	}
 	
+	
+	
+	@Override
+	public String toString() {
+		return "Obra [direccion=" + direccion + ", cantidadMetrosCuadrado=" + cantidadMetrosCuadrado + ", costoMetrosCuadrado=" + costoMetrosCuadrado + ", tiempoEstimado=" + tiempoEstimado + ", empleados=" + empleados + "]";
+	}
+
+
+
 	public String getDireccion() {
 		return direccion;
 	}

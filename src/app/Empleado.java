@@ -1,13 +1,14 @@
 package app;
 
 public abstract class Empleado {
-	private String nombre, dni;
-	private int telefono;
+	protected String nombre;
+	protected int telefono, costoPorDia, dni;
 	
-	public Empleado(String nombre, String dni, int telefono) {
+	public Empleado(String nombre, int dni, int telefono, int costoPorDia) {
 		setNombre(nombre);
 		setDni(dni);
 		setTelefono(telefono);
+		setCostoPorDia(costoPorDia);
 	}
 
 	public String getNombre() {
@@ -18,11 +19,11 @@ public abstract class Empleado {
 		this.nombre = nombre;
 	}
 
-	public String getDni() {
+	public int getDni() {
 		return dni;
 	}
 
-	public void setDni(String dni) {
+	public void setDni(int dni) {
 		this.dni = dni;
 	}
 
@@ -32,6 +33,19 @@ public abstract class Empleado {
 
 	public void setTelefono(int telefono) {
 		this.telefono = telefono;
+	}
+
+	public int getCostoPorDia() {
+		return costoPorDia;
+	}
+
+	public void setCostoPorDia(int costoPorDia) {
+		this.costoPorDia = costoPorDia;
+	}
+
+	@Override
+	public String toString() {
+		return "Empleado [nombre=" + nombre + ", telefono=" + telefono + ", costoPorDia=" + costoPorDia + ", dni=" + dni + "]";
 	}
 	
 	

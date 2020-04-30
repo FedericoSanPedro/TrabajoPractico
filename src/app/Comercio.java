@@ -11,6 +11,15 @@ public class Comercio extends Comercial{
 		setRubro(rubro);
 	}
 
+	
+	
+	@Override
+	public String toString() {
+		return "Comercio [rubro=" + rubro + ", nombre=" + nombre + ", direccion=" + direccion + ", cantidadMetrosCuadrado=" + cantidadMetrosCuadrado + ", costoMetrosCuadrado=" + costoMetrosCuadrado + ", tiempoEstimado=" + tiempoEstimado + ", empleados=" + empleados + "]";
+	}
+
+
+
 	public String getRubro() {
 		return rubro;
 	}

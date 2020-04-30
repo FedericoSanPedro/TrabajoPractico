@@ -11,6 +11,15 @@ public class Domestica extends Obra{
 		super(direccion, cantidadMetrosCuadrado, costoMetrosCuadrado, tiempoEstimado, empleados);
 		setCantidadHabitacion(cantidadHabitacion);
 	}
+	
+	
+
+	@Override
+	public String toString() {
+		return "Domestica [cantidadHabitacion=" + cantidadHabitacion + ", direccion=" + direccion + ", cantidadMetrosCuadrado=" + cantidadMetrosCuadrado + ", costoMetrosCuadrado=" + costoMetrosCuadrado + ", tiempoEstimado=" + tiempoEstimado + ", empleados=" + empleados + "]";
+	}
+
+
 
 	public int getCantidadHabitacion() {
 		return cantidadHabitacion;
