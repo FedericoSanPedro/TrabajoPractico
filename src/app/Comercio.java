@@ -10,15 +10,10 @@ public class Comercio extends Comercial{
 		super(direccion, cantidadMetrosCuadrado, costoMetrosCuadrado, tiempoEstimado, empleados, nombre);
 		setRubro(rubro);
 	}
-
 	
-	
-	@Override
 	public String toString() {
-		return "Comercio [rubro=" + rubro + ", nombre=" + nombre + ", direccion=" + direccion + ", cantidadMetrosCuadrado=" + cantidadMetrosCuadrado + ", costoMetrosCuadrado=" + costoMetrosCuadrado + ", tiempoEstimado=" + tiempoEstimado + ", empleados=" + empleados + "]";
+		return "El comercio " + nombre + " se situa en " + direccion + ", tiene " + rubro + " como rubros, con una cantidad total de " + cantidadMetrosCuadrado + " mt2 y su costo por cada uno es de $" + costoMetrosCuadrado + ". Se estimula que los empleados tardaran unos " + tiempoEstimado + " dias en terminar la construccion.";
 	}
-
-
 
 	public String getRubro() {
 		return rubro;

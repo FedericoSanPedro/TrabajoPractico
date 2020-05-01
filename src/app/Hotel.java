@@ -13,10 +13,10 @@ public class Hotel extends Comercial{
 	
 	
 
-	@Override
 	public String toString() {
-		return "Hotel [cantidadDePiso=" + cantidadDePiso + ", nombre=" + nombre + ", direccion=" + direccion + ", cantidadMetrosCuadrado=" + cantidadMetrosCuadrado + ", costoMetrosCuadrado=" + costoMetrosCuadrado + ", tiempoEstimado=" + tiempoEstimado + ", empleados=" + empleados + "]";
+		return "El hotel " + nombre + " se situa en " + direccion + ", tiene " + cantidadDePiso + " pisos, con una cantidad total de " + cantidadMetrosCuadrado + " mt2 y su costo por cada uno es de $" + costoMetrosCuadrado + ". Se estimula que los empleados tardaran unos " + tiempoEstimado + " dias en terminar la construccion.";
 	}
+
 
 
 

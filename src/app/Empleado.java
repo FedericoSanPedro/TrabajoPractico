@@ -1,6 +1,8 @@
 package app;
 
 public abstract class Empleado {
+	
+
 	protected String nombre;
 	protected int telefono, costoPorDia, dni;
 	

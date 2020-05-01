@@ -20,12 +20,12 @@ private int edad;
 	
 	@Override
 	public String toString() {
-		return "Obrero [edad=" + edad + ", nombre=" + nombre + ", telefono=" + telefono + ", costoPorDia=" + costoPorDia + ", dni=" + dni + "]";
+		return "El nombre del Obrero es " + nombre + ", su DNI: " + dni + ", su edad es " + edad + " años, su telefono " + telefono + ", y cobra por dia $" + costoPorDia + ".";
 	}
 
 	@Override
 	public void construir() {
-		System.out.println("Obrero construyendo");
+		System.out.println("Soy obrero y construyo");
 		
 	}
 }

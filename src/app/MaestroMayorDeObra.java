@@ -1,32 +1,31 @@
 package app;
 
 public class MaestroMayorDeObra extends Empleado implements IConstruir{
-	private int numDeMatricula;
+	private int edad;
 	
 
-	public MaestroMayorDeObra(String nombre, int dni, int telefono, int numDeMatricula) {
+	public MaestroMayorDeObra(String nombre, int dni, int telefono, int edad) {
 		super(nombre, dni, telefono,1800);
-		setNumDeMatricula(numDeMatricula);
+		setEdad(edad);
 	}
 
-	public int getNumDeMatricula() {
-		return numDeMatricula;
+	public int getEdad() {
+		return edad;
 	}
 
-	public void setNumDeMatricula(int numDeMatricula) {
-		this.numDeMatricula = numDeMatricula;
+	public void setEdad(int edad) {
+		this.edad = edad;
 	}
 
-	
 	
 	@Override
 	public String toString() {
-		return "MaestroMayorDeObra [numDeMatricula=" + numDeMatricula + ", nombre=" + nombre + ", telefono=" + telefono + ", costoPorDia=" + costoPorDia + ", dni=" + dni + "]";
+		return "El nombre del Maestro Mayor de Obras es " + nombre + ", su DNI: " + dni + ", su edad es " + edad + " años, su telefono " + telefono + ", y cobra por dia $" + costoPorDia + ".";
 	}
 
 	@Override
 	public void construir() {
-		System.out.println("El master construye");
+		System.out.println("“Soy maestro y superviso las construcciones");
 		
 	}
 	
