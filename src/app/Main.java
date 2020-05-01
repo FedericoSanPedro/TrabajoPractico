@@ -99,6 +99,12 @@ public class Main {
 		
 		obra1.mostrarEmpleadosXObra();
 		
+		System.out.println("El costo total de la obra es $" + obra2.calcularCosto());
+		
+		obra2.mostrarEmpleadosXObra();
+		
+		emp1.mostrarObras();
+		
 	}
 
 }

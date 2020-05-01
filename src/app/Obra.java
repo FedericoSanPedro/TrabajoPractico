@@ -12,7 +12,7 @@ public abstract class Obra {
 		setCantidadMetrosCuadrado(cantidadMetrosCuadrado);
 		setCostoMetrosCuadrado(costoMetrosCuadrado);
 		setTiempoEstimado(tiempoEstimado);
-		this.empleados= new ArrayList<>();
+		setEmpleados(empleados);
 	}
 	
 	@Override
@@ -61,11 +61,15 @@ public abstract class Obra {
 	}
 
 	public void mostrarEmpleadosXObra() {
-		if(getEmpleados() != null) {// el get no esta vacio
-			for(Empleado e : getEmpleados()) {// pero aca si
+		if(getEmpleados() != null) {
+			for(Empleado e : getEmpleados()) {
 				System.out.println(e.toString());
 			}
 		}
+	}
+	
+	public void mensajePlus() {
+		System.out.println(toString() + " Y su costo total es de $" + calcularCosto());
 	}
 	
 	public float costoPorDiaTotal() {
@@ -73,7 +77,7 @@ public abstract class Obra {
 		
 		if(getEmpleados()!=null) {
 			for(Empleado e : getEmpleados()) {
-				total = total + e.getCostoPorDia();// da 0
+				total = total + e.getCostoPorDia();
 			}
 		}
 		return total;

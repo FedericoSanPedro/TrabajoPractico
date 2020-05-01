@@ -9,8 +9,8 @@ public class Empresa {
 	
 	public Empresa(String nombre, ArrayList<Empleado> empleados, ArrayList <Obra> obras) {
 		setNombre(nombre);
-		this.empleados= new ArrayList<>();
-		this.obras= new ArrayList<>();
+		setEmpleados(empleados);
+		setObras(obras);
 	}
 	
 
@@ -36,6 +36,14 @@ public class Empresa {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+	
+	public void mostrarObras() {
+		if(getObras() != null) {
+			for(Obra e : getObras()) {
+				e.mensajePlus();
+			}
+		}
 	}
 	
 	}
