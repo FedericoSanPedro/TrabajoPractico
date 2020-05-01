@@ -25,7 +25,7 @@ public class Comercio extends Comercial{
 	
 	@Override
 	public int calcularCosto() {
-		return 0;
+		return 0;//(costoMetrosCuadrado * cantidadMetrosCuadrado)+(costoPorDia * tiempoEstimado);
 	}
 	
 }

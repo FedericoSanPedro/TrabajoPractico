@@ -1,7 +1,6 @@
 package app;
 
 import java.util.ArrayList;
-import Empleado.java;
 
 public class Domestica extends Obra{
 	private int cantidadHabitacion;
