@@ -61,8 +61,8 @@ public abstract class Obra {
 	}
 
 	public void mostrarEmpleadosXObra() {
-		if(getEmpleados()!=null) {
-			for(Empleado e : getEmpleados()) {// El get no esta vacio pero parece que tampoco esta tomando nada
+		if(getEmpleados() != null) {// el get no esta vacio
+			for(Empleado e : getEmpleados()) {// pero aca si
 				System.out.println(e.toString());
 			}
 		}

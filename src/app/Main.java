@@ -97,6 +97,7 @@ public class Main {
 		
 		System.out.println("El costo total de la obra es $" + obra1.calcularCosto());
 		
+		obra1.mostrarEmpleadosXObra();
 		
 	}
 
