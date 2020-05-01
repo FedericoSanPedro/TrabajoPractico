@@ -38,14 +38,4 @@ public class Empresa {
 		this.nombre = nombre;
 	}
 	
-	public void mostrarEmpleadosXObra(ArrayList<Empleado> empleados) {
-			for(Empleado e : empleados) {
-		System.out.println(e.toString());
 	}
-	}
-	
-	/*public int calcularCosto() {
-		return (costoMetrosCuadrado * cantidadMetrosCuadrado)+(costoPorDia * tiempoEstimado);
-	}*/
-	
-}

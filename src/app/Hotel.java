@@ -16,9 +16,10 @@ public class Hotel extends Comercial{
 	public String toString() {
 		return "El hotel " + nombre + " se situa en " + direccion + ", tiene " + cantidadDePiso + " pisos, con una cantidad total de " + cantidadMetrosCuadrado + " mt2 y su costo por cada uno es de $" + costoMetrosCuadrado + ". Se estimula que los empleados tardaran unos " + tiempoEstimado + " dias en terminar la construccion.";
 	}
-
-
-
+	
+	public void mostrarEmpleadosXObra() {
+		super.mostrarEmpleadosXObra();
+	}
 
 	public int getCantidadDePiso() {
 		return cantidadDePiso;
@@ -28,9 +29,8 @@ public class Hotel extends Comercial{
 		this.cantidadDePiso = cantidadDePiso;
 	}
 	
-	@Override
-	public int calcularCosto() {
-		return 0;//(costoMetrosCuadrado * cantidadMetrosCuadrado)+(costoPorDia * tiempoEstimado);
+	public float calcularCosto() {
+		return super.calcularCosto();
 	}
 	
 }

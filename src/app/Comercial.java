@@ -11,22 +11,14 @@ public abstract class Comercial extends Obra{
 		setNombre(nombre);
 	}
 
-	
-	
-	
-
-
-
 	@Override
 	public String toString() {
 		return "Comercial [nombre=" + nombre + ", direccion=" + direccion + ", cantidadMetrosCuadrado=" + cantidadMetrosCuadrado + ", costoMetrosCuadrado=" + costoMetrosCuadrado + ", tiempoEstimado=" + tiempoEstimado + ", empleados=" + empleados + "]";
 	}
 
-
-
-
-
-
+	public void mostrarEmpleadosXObra() {
+		super.mostrarEmpleadosXObra();
+	}
 
 	public String getNombre() {
 		return nombre;
@@ -36,8 +28,8 @@ public abstract class Comercial extends Obra{
 		this.nombre = nombre;
 	}
 	
-	@Override
-	public abstract int calcularCosto();
-	
+	public float calcularCosto() {
+		return super.calcularCosto();
+	}
 	
 }

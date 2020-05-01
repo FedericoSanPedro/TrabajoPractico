@@ -24,9 +24,13 @@ public class Domestica extends Obra{
 	}
 
 	@Override
-	public int calcularCosto() {
-		return 0;//(costoMetrosCuadrado * cantidadMetrosCuadrado)+(costoPorDia * tiempoEstimado);
+	public float calcularCosto() {
+		return super.calcularCosto();//(costoMetrosCuadrado * cantidadMetrosCuadrado)+(costoPorDia * tiempoEstimado);
 	}
 	
+
+	public void mostrarEmpleadosXObra() {
+		super.mostrarEmpleadosXObra();
+	}
 	
 }

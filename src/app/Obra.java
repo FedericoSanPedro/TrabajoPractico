@@ -15,14 +15,10 @@ public abstract class Obra {
 		this.empleados= new ArrayList<>();
 	}
 	
-	
-	
 	@Override
 	public String toString() {
 		return "Obra [direccion=" + direccion + ", cantidadMetrosCuadrado=" + cantidadMetrosCuadrado + ", costoMetrosCuadrado=" + costoMetrosCuadrado + ", tiempoEstimado=" + tiempoEstimado + ", empleados=" + empleados + "]";
 	}
-
-
 
 	public String getDireccion() {
 		return direccion;
@@ -63,8 +59,28 @@ public abstract class Obra {
 	public void setEmpleados(ArrayList<Empleado> empleados) {
 		this.empleados = empleados;
 	}
+
+	public void mostrarEmpleadosXObra() {
+		if(getEmpleados()!=null) {
+			for(Empleado e : getEmpleados()) {// El get no esta vacio pero parece que tampoco esta tomando nada
+				System.out.println(e.toString());
+			}
+		}
+	}
 	
-	public abstract int calcularCosto();
+	public float costoPorDiaTotal() {
+		float total =0;
+		
+		if(getEmpleados()!=null) {
+			for(Empleado e : getEmpleados()) {
+				total = total + e.getCostoPorDia();// da 0
+			}
+		}
+		return total;
+	}
 	
+	public float calcularCosto() {
+		return (costoMetrosCuadrado * cantidadMetrosCuadrado)+((costoPorDiaTotal()) * tiempoEstimado);
+	}
 	
 }

@@ -95,7 +95,8 @@ public class Main {
 		
 		Empresa emp1 = new Empresa("Santander",listaEmpleadosTotal,obras);
 		
-		emp1.mostrarEmpleadosXObra(listaEmpleadosTotal);
+		System.out.println("El costo total de la obra es $" + obra1.calcularCosto());
+		
 		
 	}
 

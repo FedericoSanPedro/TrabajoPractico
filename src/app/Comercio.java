@@ -23,9 +23,15 @@ public class Comercio extends Comercial{
 		this.rubro = rubro;
 	}
 	
+
+	public void mostrarEmpleadosXObra() {
+		super.mostrarEmpleadosXObra();
+	}
+	
+	
 	@Override
-	public int calcularCosto() {
-		return 0;//(costoMetrosCuadrado * cantidadMetrosCuadrado)+(costoPorDia * tiempoEstimado);
+	public float calcularCosto() {
+		return super.calcularCosto();
 	}
 	
 }
